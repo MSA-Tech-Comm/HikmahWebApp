@@ -1,6 +1,6 @@
 # /StudX_dir/StudX/common/utils.py
 
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from datetime import time, datetime, timedelta
 
 # this function is used in the schedule module to generate a list of time

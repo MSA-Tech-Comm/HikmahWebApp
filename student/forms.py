@@ -2,7 +2,7 @@
 
 from django import forms
 from django.forms.formsets import formset_factory
-from tinymce import TinyMCE
+from tinymce.widgets import TinyMCE
 
 # import core.models
 from django.contrib.auth.models import User

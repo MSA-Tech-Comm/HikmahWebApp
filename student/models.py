@@ -7,7 +7,7 @@ from datetime import datetime, date, time, timedelta
 from django.utils.translation import gettext as _ # for internationalization
 from django.utils import timezone
 from django.contrib.auth.models import User
-from tinymce import HTMLField
+from tinymce.models import HTMLField
 import uuid
 
 # Apps imports

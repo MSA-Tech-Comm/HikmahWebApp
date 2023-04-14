@@ -9,7 +9,7 @@ import uuid
 from django.conf import settings
 from django.utils.translation import gettext as _ # for internationalization
 from django.utils import timezone
-from tinymce import HTMLField
+from tinymce.models import HTMLField
 from datetime import datetime, date, time, timedelta
 
 # Models

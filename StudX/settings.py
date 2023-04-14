@@ -88,10 +88,10 @@ WSGI_APPLICATION = 'StudX.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'StudX_database',
-        'USER': 'devdev',
-        'PASSWORD': 'Backfire7?',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'studx_database.sqlite3',
+        'USER': 'admin',
+        'PASSWORD': 'root',
         'PORT': '8000',
 	}
 }

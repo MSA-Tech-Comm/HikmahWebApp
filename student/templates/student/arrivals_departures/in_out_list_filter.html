@@ -19,7 +19,7 @@
 					<select class="form-control form-control-sm"}  name="classe">
 						<option value=""> Classe </option>
 						{% for classe in classe_obj_list %}
-							<option value="{{c.id}}" {% if request.POST.classe %}{% ifequal classe.id request.POST.classe|add:"0" %}selected{% endifequal %}{% endif %}>{{classe.classe_name}}
+							<option value="{{c.id}}" {% if request.POST.classe %}{% if classe.id == request.POST.classe|add:"0" %}selected{% endif %}{% endif %}>{{classe.classe_name}}
 							</option>
 						{% endfor %}
 					</select>

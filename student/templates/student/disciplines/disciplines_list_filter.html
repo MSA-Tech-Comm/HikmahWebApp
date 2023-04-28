@@ -13,7 +13,7 @@
 					<select class="form-control form-control-sm"}  name="sanction">
 						<option value=""> Sanctions </option>
 						{% for d in disciplines_type_obj_list %}
-							<option value="{{d.id}}" {% if request.POST.sanction %}{% ifequal d.id request.POST.sanction|add:"0" %}selected{% endifequal %}{% endif %}>{{d.sanction }}
+							<option value="{{d.id}}" {% if request.POST.sanction %}{% if d.id == request.POST.sanction|add:"0" %}selected{% endif %}{% endif %}>{{d.sanction }}
 							</option>
 						{% endfor %}
 					</select>
@@ -28,7 +28,7 @@
 					<select class="form-control form-control-sm"}  name="classe">
 						<option value=""> Classe </option>
 						{% for c in classe_obj_list %}
-							<option value="{{c.id}}" {% if request.POST.classe %}{% ifequal c.id request.POST.classe|add:"0" %}selected{% endifequal %}{% endif %}>{{c.classe_name}}
+							<option value="{{c.id}}" {% if request.POST.classe %}{% if c.id == request.POST.classe|add:"0" %}selected{% endif %}{% endif %}>{{c.classe_name}}
 							</option>
 						{% endfor %}
 					</select>
